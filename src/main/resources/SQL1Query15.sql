@@ -1,0 +1,12 @@
+-- Query result:
+-- Find customers from America (with customer number, name, phone number and their nation) and "loss" they generated
+-- from returned items.
+-- Only list the top 10 customers who generated the most loss.
+-- Note 1: Return status 'R' means returned.
+-- Note 2: The loss here refers to the return of these items, i.e. lineitem's price (excluding tax, discount, or amount).
+-- <p/>
+-- Result schema:
+-- [CUSTKEY | NATION | NAME | PHONE | LOSS (↓)]
+-- <p/>
+-- Points:
+-- 0.625

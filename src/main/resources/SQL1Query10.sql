@@ -1,0 +1,10 @@
+-- Query result:
+-- Output the number of customers per nation.
+-- Group output based on nation's name.
+-- Arrange the result in ascending order of amount.
+-- <p/>
+-- Result schema:
+-- [NATION | AMOUNT (↑)]
+-- <p/>
+-- Points:
+-- 0.5

@@ -1,0 +1,10 @@
+-- Query result:
+-- Output the total volume (sum over price in lineitems) of all customers who are in market segment 'AUTOMOBILE' or 'MACHINERY'.
+-- Group the output based on customer's key and name.
+-- Arrange the result in ascending order by total volume.
+-- <p/>
+-- Result schema:
+-- [NAME | TOTAL_VOLUME (↑)]
+-- <p/>
+-- Points:
+-- 0.5

@@ -1,0 +1,11 @@
+-- Query result:
+-- Output the customer numbers of all customers who come from Germany, are not in market segment 'FURNITURE'
+-- and whose average order price is greater than 190500.
+-- Each customer number should only be output once.
+-- Arrange the result in descending order.
+-- <p/>
+-- Result schema:
+-- [CUSTOMER (↓)]
+-- <p/>
+-- Points:
+-- 0.625

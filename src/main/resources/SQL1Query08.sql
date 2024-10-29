@@ -1,0 +1,11 @@
+-- Query result:
+-- Output the amount, shipping instructions, shipping mode, return flag of all lineitems.
+-- Group tuples based on shipping instructions, shipping mode, and return flag.
+-- Only output results where the number is greater than 4999.
+-- Arrange the result in descending order by amount.
+-- <p/>
+-- Result schema:
+-- [AMOUNT (↓)| SHIPINSTRUCT | SHIPMODE| RETURNFLAG]
+-- <p/>
+-- Points:
+-- 0.25

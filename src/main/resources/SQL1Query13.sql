@@ -1,0 +1,11 @@
+-- Query result:
+-- Consider all groups of orders that have the same order date, the same clerk, and the same shipping priority.
+-- From these groups, accept orders whose total price is lower than the total price of another order in this group.
+-- Return the customers associated with these orders (excluding duplicates).
+-- Sort the result by name in descending order.
+-- <p/>
+-- Result schema:
+-- [NAME (↓)]
+-- <p/>
+-- Points:
+-- 0.625

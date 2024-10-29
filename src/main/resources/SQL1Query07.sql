@@ -1,0 +1,9 @@
+-- Query result::
+-- Output the amount, minimum, maximum, average and total price of all lineitems.
+-- Group the aggregations by the shipping mode and arrange the result in ascending alphabetical order by shipping mode.
+-- <p/>
+-- Result schema:
+-- [SHIPMODE (↑) | AMOUNT | MIN | MAX | AVG | TOTAL]
+-- <p/>
+-- Points:
+-- 0.25

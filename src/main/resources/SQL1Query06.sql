@@ -1,0 +1,8 @@
+-- Query result:
+-- Output the amount, minimum, maximum and average price of all order lines.
+-- <p/>
+-- Result schema:
+-- [AMOUNT | MIN_PRICE | MAX_PRICE | AVG_PRICE]
+-- <p/>
+-- Points:
+-- 0.125

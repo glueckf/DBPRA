@@ -1,0 +1,11 @@
+-- Query result:
+-- Output the amount, region name, and shipping mode of all lineitems excluding order lines in Canada.
+-- Group the result based on region name and shipping mode.
+-- Another tip: It is not necessary to use the Customer table, it is enough to go over the Suppliers.
+-- Order the result in ascending order by amount.
+-- <p/>
+-- Result schema:
+-- [AMOUNT(↑) | NAME | SHIPMODE]
+-- <p/>
+-- Points:
+-- 0.5
