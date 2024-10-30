@@ -9,9 +9,9 @@ package de.tuberlin.dima.dbpra.config;
 public class ConnectionConfig {
 
     // username for connection with your database
-    public final static String DB2_USER = "grp69";
+    public final static String DB2_USER = "grp33";
     // password
-    public final static String DB2_PW = "@Ripp7RZqWot";
+    public final static String DB2_PW = "jtc8rtq2zjd4txn*TRG";
     // name of your database
     public final static String DB2_DB = "DBPRA";
 }
