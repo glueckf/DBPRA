@@ -6,4 +6,4 @@
 -- <p/>
 -- Points:
 -- 0.125
-
+SELECT MFGR FROM PART ORDER BY MFGR DESC;

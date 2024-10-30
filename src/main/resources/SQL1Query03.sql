@@ -6,3 +6,4 @@
 -- <p/>
 -- Points:
 -- 0.125
+SELECT COUNT(DISTINCT BRAND) AS Amount FROM PART;

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL1Query01.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL1Query02.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL1Query03.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL1Query04.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL1Query05.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL1Query06.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL1Query07.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL1Query08.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL1Query09.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL1Query10.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL1Query11.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL1Query12.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL1Query13.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL1Query14.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL1Query15.sql" dialect="DB2" />
+  </component>
+</project>
