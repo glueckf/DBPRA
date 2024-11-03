@@ -1,0 +1,12 @@
+-- Query result:
+-- Find orders that were placed between January 1st, 1995 and December 31st, 1997 (closed interval) and for which at least 2 line items
+-- were delivered later than promised.
+-- For each order priority output how many orders were affected.
+-- Arrange the result in descending order by amount.
+--
+-- Result schema:
+-- [ORDERPRIORITY| AMOUNT (↓)]
+--
+-- Points:
+-- 0.5
+--

@@ -1,0 +1,10 @@
+-- Query result:
+-- Determine the brand(s) offered by most suppliers.
+-- Arrange the result in ascending order by brand.
+--
+-- Result scheme:
+-- [Marke (↑)]
+--
+-- Points:
+-- 0.5
+--

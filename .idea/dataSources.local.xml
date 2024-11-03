@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-241.19416.15">
+    <data-source name="DBPRA@gnu.dima.tu-berlin.de" uuid="5e2aa7db-ea7d-4a75-bd74-7b33b446c1ca">
+      <database-info product="DB2/LINUXX8664" version="SQL1005B" jdbc-version="4.2" driver-name="IBM Data Server Driver for JDBC and SQLJ" driver-version="4.33.31" dbms="DB2_LUW" exact-driver-version="4.33">
+        <extra-name-characters>@#</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>grp33</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+  </component>
+</project>

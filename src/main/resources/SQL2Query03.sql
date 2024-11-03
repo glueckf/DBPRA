@@ -1,0 +1,12 @@
+-- Query result:
+-- For each item of the types "STANDARD BURNISHED NICKEL", "ECONOMY ANODIZED STEEL" and "PROMO PLATED TIN",
+-- output the supplier from Europe that has the lowest supply cost for the item.
+-- The supply cost of an item is stored in the PartSupp table.
+-- Arrange the result in descending order by the partkey and ascending by the supplier's name.
+--
+-- Result scheme:
+-- [PARTKEY (↓1) | SUPPLYCOST | SUPPLIER (↑2)]
+--
+-- Points:
+-- 0.5
+--

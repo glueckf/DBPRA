@@ -1,0 +1,12 @@
+-- Query result:
+-- For all suppliers from Canada, output the items for which the available supply value
+-- is less than 3/1000 of the available supply value of all items from this supplier.
+-- The available supply value of an item is the product of the available quantity and the supply cost.
+-- Arrange the result in descending order by value and suppkey.
+--
+-- Result schema:
+-- [SUPPKEY (↓2) | PARTKEY | PART_NAME| VALUE (↓1)]
+--
+-- Points:
+-- 0.75
+--

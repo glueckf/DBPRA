@@ -1,0 +1,11 @@
+-- Query result:
+-- Output the total account balances  and a number of all customers whose
+-- account balance is more than 100.
+-- Group them by a country (nation), and sort the results in descending order by its name.
+--
+-- Result schema:
+-- [NAME (↓) | SUM | AMOUNT]
+--
+-- Punkte:
+-- 0.5
+--

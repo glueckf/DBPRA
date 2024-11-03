@@ -1,0 +1,11 @@
+-- Query result:
+-- For each shipping mode, find the name of the supplier  whose line items
+-- were most often shipped using this shipping mode.
+-- Arrange the result in descending order by number and ascending order by name.
+--
+-- Result schema:
+-- [SHIPMODE | NAME(↑2) | AMOUNT(↓1)]
+--
+-- Points:
+-- 0.5
+--

@@ -1,0 +1,13 @@
+-- Query result:
+-- For each customer, calculate how many of their orders contained only
+-- items from local suppliers.
+-- Local supplier means that the supplier is located in the same country as the customer.
+-- Return all customers who had at least one such local order.
+-- Arrange the results in ascending order by region, country and descending by customer name.
+--
+-- Result scheme:
+-- [CUSTOMER (↓3) | AMOUNT | NATION (↑2) | REGION (↑1)]
+--
+-- Points:
+-- 0.75
+--
