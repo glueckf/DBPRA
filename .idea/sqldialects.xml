@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/src/main/resources/SQL2Query01.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL2Query01.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL2Query02.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL2Query03.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL2Query04.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL2Query05.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL2Query06.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL2Query07.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL2Query08.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL2Query09.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL2Query10.sql" dialect="DB2" />
   </component>
 </project>

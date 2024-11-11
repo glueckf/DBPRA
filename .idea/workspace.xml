@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73acb2a7-a768-4686-a696-1f8b84e898d0" name="Changes" comment="Create JAR-File for submission and update ConnectionConfig">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="73acb2a7-a768-4686-a696-1f8b84e898d0" name="Changes" comment="Import task02 files and configure ConnectionConfig">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5e2aa7db-ea7d-4a75-bd74-7b33b446c1ca.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5e2aa7db-ea7d-4a75-bd74-7b33b446c1ca.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query01.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query01.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query02.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query02.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query03.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query03.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query04.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query04.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query05.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query05.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query06.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query06.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query07.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query07.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query08.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query08.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query09.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query09.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query10.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query10.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +64,10 @@
     &quot;JUnit.Exercise01Test.getSQLQuery06Test.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.Exercise01Test.getSQLQuery10Test.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.Exercise01Test.getSQLQuery11Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Exercise02Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Exercise02Test.getSQLQuery01Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Exercise02Test.getSQLQuery02Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Exercise02Test.getSQLQuery03Test.executor&quot;: &quot;Run&quot;,
     &quot;Maven.exercise01 [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.exercise01 [package].executor&quot;: &quot;Run&quot;,
     &quot;Maven.exercise02 [clean].executor&quot;: &quot;Run&quot;,
@@ -77,7 +88,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="JUnit.ConnectionConfigTest (1)">
+  <component name="RunManager" selected="JUnit.Exercise02Test">
     <configuration name="ConnectionConfigTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exercise02" />
       <extension name="coverage">
@@ -93,23 +104,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConnectionConfigTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="exercise01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.tuberlin.dima.dbpra.config.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.config" />
-      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.config.ConnectionConfigTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Exercise01Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="exercise01" />
+    <configuration name="Exercise02Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise02" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="de.tuberlin.dima.dbpra.exercises.*" />
@@ -117,14 +113,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.exercises" />
-      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise01Test" />
+      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise02Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Exercise01Test.getSQLQuery10Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="exercise01" />
+    <configuration name="Exercise02Test.getSQLQuery01Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise02" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="de.tuberlin.dima.dbpra.exercises.*" />
@@ -132,15 +128,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.exercises" />
-      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise01Test" />
-      <option name="METHOD_NAME" value="getSQLQuery10Test" />
+      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise02Test" />
+      <option name="METHOD_NAME" value="getSQLQuery01Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Exercise01Test.getSQLQuery11Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="exercise01" />
+    <configuration name="Exercise02Test.getSQLQuery02Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise02" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="de.tuberlin.dima.dbpra.exercises.*" />
@@ -148,8 +144,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.exercises" />
-      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise01Test" />
-      <option name="METHOD_NAME" value="getSQLQuery11Test" />
+      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise02Test" />
+      <option name="METHOD_NAME" value="getSQLQuery02Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercise02Test.getSQLQuery03Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.tuberlin.dima.dbpra.exercises.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.exercises" />
+      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise02Test" />
+      <option name="METHOD_NAME" value="getSQLQuery03Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Exercise02Test" />
+        <item itemvalue="JUnit.Exercise02Test.getSQLQuery03Test" />
+        <item itemvalue="JUnit.Exercise02Test.getSQLQuery01Test" />
+        <item itemvalue="JUnit.Exercise02Test.getSQLQuery02Test" />
         <item itemvalue="JUnit.ConnectionConfigTest (1)" />
-        <item itemvalue="JUnit.Exercise01Test" />
-        <item itemvalue="JUnit.ConnectionConfigTest" />
-        <item itemvalue="JUnit.Exercise01Test.getSQLQuery11Test" />
-        <item itemvalue="JUnit.Exercise01Test.getSQLQuery10Test" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +195,10 @@
       <updated>1730203019207</updated>
       <workItem from="1730203020229" duration="10533000" />
       <workItem from="1730625952021" duration="565000" />
-      <workItem from="1730626525760" duration="7000" />
+      <workItem from="1730626525760" duration="2808000" />
+      <workItem from="1730893618917" duration="720000" />
+      <workItem from="1730943335491" duration="11396000" />
+      <workItem from="1731331307388" duration="666000" />
     </task>
     <task id="LOCAL-00001" summary="Load HA01">
       <option name="closed" value="true" />
@@ -201,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730275683170</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Import task02 files and configure ConnectionConfig">
+      <option name="closed" value="true" />
+      <created>1730626577862</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730626577862</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +244,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Load HA01" />
     <MESSAGE value="Create JAR-File for submission and update ConnectionConfig" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create JAR-File for submission and update ConnectionConfig" />
+    <MESSAGE value="Import task02 files and configure ConnectionConfig" />
+    <option name="LAST_COMMIT_MESSAGE" value="Import task02 files and configure ConnectionConfig" />
   </component>
 </project>
