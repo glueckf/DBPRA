@@ -127,6 +127,18 @@ public class Exercise03 implements Exercise03Interface {
     @Override
     public void createTrigger(Connection con) throws SQLException {
         // Task 8, 1P
+        // Task 1, 0.25P
+        Statement statement = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+        try {
+            statement.execute(getQueryString(81));
+        } catch (SQLException e) {
+            //TODO: Fehlerbehandlung
+            if (e.getSQLState().equals("42710")) {
+                statement.execute("DELETE FROM PhoneChanges");
+            }else{
+                throw e;
+            }
+        }
 
     }
 
