@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="179ea2c9-f2db-4361-b155-a86c0c2d9e9f" name="Changes" comment="Handle exeption in Exercise03.java">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL3Query03.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL3Query03.sql" afterDir="false" />
+    <list default="true" id="179ea2c9-f2db-4361-b155-a86c0c2d9e9f" name="Changes" comment="Solve Query 03">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL3Query04.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL3Query04.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +126,7 @@
       <workItem from="1730201393205" duration="426000" />
       <workItem from="1732034290628" duration="1951000" />
       <workItem from="1732036497033" duration="24000" />
-      <workItem from="1732036528196" duration="2419000" />
+      <workItem from="1732036528196" duration="2681000" />
     </task>
     <task id="LOCAL-00001" summary="Load HA01">
       <option name="closed" value="true" />
@@ -169,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732038095066</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Solve Query 03">
+      <option name="closed" value="true" />
+      <created>1732038968707</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732038968707</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +199,7 @@
     <MESSAGE value="Solve Query 01" />
     <MESSAGE value="Solve Query 02" />
     <MESSAGE value="Handle exeption in Exercise03.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Handle exeption in Exercise03.java" />
+    <MESSAGE value="Solve Query 03" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve Query 03" />
   </component>
 </project>
