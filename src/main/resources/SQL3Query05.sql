@@ -3,3 +3,11 @@
 -- Points:
 -- 0.5
 --
+ALTER TABLE CustomerContactData
+ADD CONSTRAINT FacebookAndGoogleID_Check
+CHECK(
+    GoogleId BETWEEN 100001 AND 999999
+    AND FacebookId BETWEEN 100001 AND 999999
+    AND GoogleId NOT IN (886345, 456291, 366667, 227456)
+    AND FacebookId NOT IN (623812, 736748, 698222, 981372)
+    );
