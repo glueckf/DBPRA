@@ -28,8 +28,11 @@ public class Exercise03 implements Exercise03Interface {
             statement.execute(getQueryString(1));
         } catch (SQLException e) {
             //TODO: Fehlerbehandlung
-            // falls Tabelle schon existiert, lösche alle Einträge
-            statement.execute("DELETE FROM CustomerContactTable");
+            if (e.getSQLState().equals("42710")) {
+                statement.execute("DELETE FROM CustomerContactData");
+            }else{
+                throw e;
+            }
         }
     }
 
