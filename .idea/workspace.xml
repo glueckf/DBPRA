@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="179ea2c9-f2db-4361-b155-a86c0c2d9e9f" name="Changes" comment="Solve Query 01">
+    <list default="true" id="179ea2c9-f2db-4361-b155-a86c0c2d9e9f" name="Changes" comment="Handle exeption in Exercise03.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/tuberlin/dima/dbpra/exercises/Exercise03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/tuberlin/dima/dbpra/exercises/Exercise03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL3Query02.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL3Query02.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL3Query03.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL3Query03.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +33,11 @@
     &quot;accountId&quot;: &quot;1c67b2b7-4a17-444c-a342-a52ca0113a87&quot;
   }
 }</component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="Exercise03Test" />
+    </enabled-run-configurations>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -123,7 +127,7 @@
       <workItem from="1730201393205" duration="426000" />
       <workItem from="1732034290628" duration="1951000" />
       <workItem from="1732036497033" duration="24000" />
-      <workItem from="1732036528196" duration="1503000" />
+      <workItem from="1732036528196" duration="2419000" />
     </task>
     <task id="LOCAL-00001" summary="Load HA01">
       <option name="closed" value="true" />
@@ -149,7 +153,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732037318647</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Solve Query 02">
+      <option name="closed" value="true" />
+      <created>1732038061333</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732038061333</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Handle exeption in Exercise03.java">
+      <option name="closed" value="true" />
+      <created>1732038095066</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732038095066</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +190,8 @@
     <MESSAGE value="Load HA01" />
     <MESSAGE value="Load HA03" />
     <MESSAGE value="Solve Query 01" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve Query 01" />
+    <MESSAGE value="Solve Query 02" />
+    <MESSAGE value="Handle exeption in Exercise03.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Handle exeption in Exercise03.java" />
   </component>
 </project>
