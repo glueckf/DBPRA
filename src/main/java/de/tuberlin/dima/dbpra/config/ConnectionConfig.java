@@ -13,9 +13,9 @@ import java.sql.SQLException;
  */
 public class ConnectionConfig {
     // User Name für die Verbindung mit deiner Datenbank
-    public final static String DB2_USER = "";
+    public final static String DB2_USER = "grp33";
     // Passwort für die Verbindung mit deiner Datenbank
-    public final static String DB2_PW = "";
+    public final static String DB2_PW = "jtc8rtq2zjd4txn*TRG";
 
     // Name deiner Datenbank
     public final static String DB2_DB = "DBPRA";

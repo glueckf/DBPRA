@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="179ea2c9-f2db-4361-b155-a86c0c2d9e9f" name="Changes" comment="Load HA01" />
+    <list default="true" id="179ea2c9-f2db-4361-b155-a86c0c2d9e9f" name="Changes" comment="Load HA03">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/tuberlin/dima/dbpra/config/ConnectionConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/tuberlin/dima/dbpra/config/ConnectionConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/tuberlin/dima/dbpra/exercises/Exercise03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/tuberlin/dima/dbpra/exercises/Exercise03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL3Query01.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL3Query01.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL3Query02.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL3Query02.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,21 +27,21 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "glueckf"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;glueckf&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/glueckf/DBPRA.git",
-    "accountId": "1c67b2b7-4a17-444c-a342-a52ca0113a87"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/glueckf/DBPRA.git&quot;,
+    &quot;accountId&quot;: &quot;1c67b2b7-4a17-444c-a342-a52ca0113a87&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2o6sWcfVBbynErjw1inwwY3XNRB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -41,16 +50,65 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ConnectionConfigTest.executor": "Run",
+    "JUnit.Exercise03Test.executor": "Run",
+    "Maven.exercise03 [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "task03",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "db2"
+    ]
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.Exercise03Test">
+    <configuration name="ConnectionConfigTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.tuberlin.dima.dbpra.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.config" />
+      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.config.ConnectionConfigTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercise03Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.tuberlin.dima.dbpra.exercises.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.exercises" />
+      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise03Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Exercise03Test" />
+        <item itemvalue="JUnit.ConnectionConfigTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -68,6 +126,9 @@
       <option name="presentableId" value="Default" />
       <updated>1730201392143</updated>
       <workItem from="1730201393205" duration="426000" />
+      <workItem from="1732034290628" duration="1951000" />
+      <workItem from="1732036497033" duration="24000" />
+      <workItem from="1732036528196" duration="766000" />
     </task>
     <task id="LOCAL-00001" summary="Load HA01">
       <option name="closed" value="true" />
@@ -77,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730201717897</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Load HA03">
+      <option name="closed" value="true" />
+      <created>1732034021973</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732034021973</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +165,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Load HA01" />
-    <option name="LAST_COMMIT_MESSAGE" value="Load HA01" />
+    <MESSAGE value="Load HA03" />
+    <option name="LAST_COMMIT_MESSAGE" value="Load HA03" />
   </component>
 </project>
