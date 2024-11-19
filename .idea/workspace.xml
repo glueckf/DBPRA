@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73acb2a7-a768-4686-a696-1f8b84e898d0" name="Changes" comment="Import task02 files and configure ConnectionConfig">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5e2aa7db-ea7d-4a75-bd74-7b33b446c1ca.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5e2aa7db-ea7d-4a75-bd74-7b33b446c1ca.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="73acb2a7-a768-4686-a696-1f8b84e898d0" name="Changes" comment="Solve SQL Query Tasks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query01.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query01.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query02.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query02.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query03.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query03.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query04.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query04.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query05.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query05.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query06.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query06.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query07.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query07.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query08.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query08.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query09.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query09.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query10.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query10.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +59,7 @@
     &quot;Maven.exercise01 [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.exercise01 [package].executor&quot;: &quot;Run&quot;,
     &quot;Maven.exercise02 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.exercise02 [package].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;task02&quot;,
@@ -198,7 +187,8 @@
       <workItem from="1730626525760" duration="2808000" />
       <workItem from="1730893618917" duration="720000" />
       <workItem from="1730943335491" duration="11396000" />
-      <workItem from="1731331307388" duration="666000" />
+      <workItem from="1731331307388" duration="1880000" />
+      <workItem from="1732031404624" duration="603000" />
     </task>
     <task id="LOCAL-00001" summary="Load HA01">
       <option name="closed" value="true" />
@@ -224,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730626577862</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Solve SQL Query Tasks">
+      <option name="closed" value="true" />
+      <created>1731332057816</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731332057816</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +243,7 @@
     <MESSAGE value="Load HA01" />
     <MESSAGE value="Create JAR-File for submission and update ConnectionConfig" />
     <MESSAGE value="Import task02 files and configure ConnectionConfig" />
-    <option name="LAST_COMMIT_MESSAGE" value="Import task02 files and configure ConnectionConfig" />
+    <MESSAGE value="Solve SQL Query Tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve SQL Query Tasks" />
   </component>
 </project>
