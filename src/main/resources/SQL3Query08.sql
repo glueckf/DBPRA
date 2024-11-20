@@ -1,6 +1,6 @@
 -- Creating the table
 
-CREATE TABLE PhoneCharges(
+CREATE TABLE PhoneChanges(
     CHANGEDATE TIMESTAMP NOT NULL,
     CUSTKEY INTEGER NOT NULL,
     OLDPHONE VARCHAR(50),
