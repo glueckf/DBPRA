@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="179ea2c9-f2db-4361-b155-a86c0c2d9e9f" name="Changes" comment="Implement Trigger in createTrigger">
+    <list default="true" id="179ea2c9-f2db-4361-b155-a86c0c2d9e9f" name="Changes" comment="Implement dropCustomerContactTable in Exercise03.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/tuberlin/dima/dbpra/exercises/Exercise03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/tuberlin/dima/dbpra/exercises/Exercise03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL3Query02.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL3Query02.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL3Query07.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL3Query07.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +45,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.ConnectionConfigTest.executor": "Run",
+    "JUnit.Exercise03Test.TestCheckTwitterConstraint.executor": "Debug",
     "JUnit.Exercise03Test.TestDropTable.executor": "Run",
     "JUnit.Exercise03Test.executor": "Run",
     "Maven.exercise03 [clean].executor": "Run",
@@ -67,7 +67,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.Exercise03Test">
+  <component name="RunManager" selected="JUnit.Exercise03Test.TestCheckTwitterConstraint">
     <configuration name="ConnectionConfigTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exercise03" />
       <extension name="coverage">
@@ -98,6 +98,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Exercise03Test.TestCheckTwitterConstraint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.tuberlin.dima.dbpra.exercises.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.exercises" />
+      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise03Test" />
+      <option name="METHOD_NAME" value="TestCheckTwitterConstraint" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Exercise03Test.TestDropTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exercise03" />
       <extension name="coverage">
@@ -116,6 +132,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Exercise03Test.TestCheckTwitterConstraint" />
         <item itemvalue="JUnit.Exercise03Test" />
         <item itemvalue="JUnit.Exercise03Test.TestDropTable" />
         <item itemvalue="JUnit.ConnectionConfigTest" />
@@ -142,7 +159,7 @@
       <workItem from="1732034290628" duration="1951000" />
       <workItem from="1732036497033" duration="24000" />
       <workItem from="1732036528196" duration="9447000" />
-      <workItem from="1732103877279" duration="2868000" />
+      <workItem from="1732103877279" duration="6547000" />
     </task>
     <task id="LOCAL-00001" summary="Load HA01">
       <option name="closed" value="true" />
@@ -264,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732106382389</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Implement dropCustomerContactTable in Exercise03.java">
+      <option name="closed" value="true" />
+      <created>1732106936781</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1732106936781</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +322,7 @@
     <MESSAGE value="Implement Trigger in SQL" />
     <MESSAGE value="Refactor Mistake in Query" />
     <MESSAGE value="Implement Trigger in createTrigger" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement Trigger in createTrigger" />
+    <MESSAGE value="Implement dropCustomerContactTable in Exercise03.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement dropCustomerContactTable in Exercise03.java" />
   </component>
 </project>
