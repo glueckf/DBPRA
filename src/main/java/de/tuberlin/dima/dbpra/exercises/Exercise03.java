@@ -130,7 +130,7 @@ public class Exercise03 implements Exercise03Interface {
         // Task 1, 0.25P
         Statement statement = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
         try {
-            statement.execute(getQueryString(81));
+            statement.execute(getQueryString(8));
         } catch (SQLException e) {
             //TODO: Fehlerbehandlung
             if (e.getSQLState().equals("42710")) {
@@ -139,6 +139,9 @@ public class Exercise03 implements Exercise03Interface {
                 throw e;
             }
         }
+
+        // Trigger
+        statement.execute(getQueryString(9));
 
     }
 
