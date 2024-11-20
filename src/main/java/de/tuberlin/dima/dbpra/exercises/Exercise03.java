@@ -46,7 +46,14 @@ public class Exercise03 implements Exercise03Interface {
     @Override
     public void dropCustomerContactTable(Connection con) throws SQLException {
         // Task 2, 0.25P
-        executeStatement(con, getQueryString(2));
+        try{
+            executeStatement(con, getQueryString(2));
+        }catch (SQLException e){
+            if(!e.getSQLState().equals("42704")){
+                throw e;
+            }
+        }
+
     }
 
     /**

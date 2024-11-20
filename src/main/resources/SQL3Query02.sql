@@ -4,4 +4,4 @@
 -- 0.25
 --
 
-DROP TABLE CustomerContactData;
+DROP TABLE CustomerContactData
