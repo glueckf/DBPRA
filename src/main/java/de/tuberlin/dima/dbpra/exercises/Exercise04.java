@@ -17,6 +17,7 @@ public class Exercise04 implements Exercise04Interface {
      */
     public void ex01CreateUDFs(Connection con) throws SQLException {
         // your code comes here
+        executeStatement(con, getQueryString(1));
     }
 
     /**
