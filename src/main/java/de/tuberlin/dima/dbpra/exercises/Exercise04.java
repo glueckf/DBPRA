@@ -26,6 +26,7 @@ public class Exercise04 implements Exercise04Interface {
      */
     public void ex02CreateView1(Connection con) throws SQLException {
         // your code comes here
+        executeStatement(con, getQueryString(3));
     }
 
     /**
@@ -33,6 +34,7 @@ public class Exercise04 implements Exercise04Interface {
      */
     public void ex03CreateView2(Connection con) throws SQLException {
         // your code comes here
+        executeStatement(con, getQueryString(4));
     }
 
     /**
@@ -58,7 +60,7 @@ public class Exercise04 implements Exercise04Interface {
         StringBuilder query = new StringBuilder();
 
         try {
-            String path = String.format("SQL4Query%02d.sql", i);
+            String path = String.format("Query%02d.sql", i);
             InputStream is = Exercise04.class.getClassLoader().getResourceAsStream(path);
             BufferedReader br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
 
