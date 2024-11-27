@@ -42,6 +42,7 @@ public class Exercise04 implements Exercise04Interface {
      */
     public void ex04CreateTrigger(Connection con) throws SQLException {
         // your code comes here
+        executeStatement(con, getQueryString(5));
     }
 
     /**
