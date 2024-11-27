@@ -50,6 +50,7 @@ public class Exercise04 implements Exercise04Interface {
      */
     public void ex05CreateProcedure(Connection con) throws SQLException {
         // your code comes here
+        executeStatement(con, getQueryString(6));
     }
 
     private void executeStatement(Connection con, String query) throws SQLException {
