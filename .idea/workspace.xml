@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b58c69eb-c10c-4258-9069-4a5c03886920" name="Changes" comment="Solve Task 5" />
+    <list default="true" id="b58c69eb-c10c-4258-9069-4a5c03886920" name="Changes" comment="Configure task05" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="task04" />
+        <entry key="$PROJECT_DIR$" value="task05" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,6 +43,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ConnectionConfigTest (1).executor": "Run",
     "JUnit.ConnectionConfigTest.executor": "Run",
     "JUnit.Exercise04Test.executor": "Run",
     "JUnit.Exercise04Test.testEx03CreateView2.executor": "Run",
@@ -50,8 +51,9 @@
     "JUnit.Exercise04Test.testEx05CreateProcedure.executor": "Run",
     "Maven.exercise04 [clean].executor": "Run",
     "Maven.exercise04 [package].executor": "Run",
+    "Maven.exercise05 [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "task05",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -67,9 +69,9 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.Exercise04Test.testEx05CreateProcedure">
-    <configuration name="ConnectionConfigTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="exercise04" />
+  <component name="RunManager" selected="JUnit.Exercise051Test">
+    <configuration name="ConnectionConfigTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise05" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="de.tuberlin.dima.dbpra.config.*" />
@@ -94,22 +96,6 @@
       <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.exercises" />
       <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise04Test" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Exercise04Test.testEx03CreateView2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="exercise04" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.tuberlin.dima.dbpra.exercises.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.exercises" />
-      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise04Test" />
-      <option name="METHOD_NAME" value="testEx03CreateView2" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,13 +132,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Exercise051Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise05" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.tuberlin.dima.dbpra.exercises.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.exercises" />
+      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise051Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Exercise051Test" />
+        <item itemvalue="JUnit.ConnectionConfigTest (1)" />
         <item itemvalue="JUnit.Exercise04Test.testEx05CreateProcedure" />
         <item itemvalue="JUnit.Exercise04Test" />
         <item itemvalue="JUnit.Exercise04Test.testEx04CreateTrigger" />
-        <item itemvalue="JUnit.Exercise04Test.testEx03CreateView2" />
-        <item itemvalue="JUnit.ConnectionConfigTest" />
       </list>
     </recent_temporary>
   </component>
@@ -176,6 +177,7 @@
       <workItem from="1732188885717" duration="863000" />
       <workItem from="1732638503424" duration="2894000" />
       <workItem from="1732641405002" duration="14261000" />
+      <workItem from="1733226239334" duration="367000" />
     </task>
     <task id="LOCAL-00001" summary="Config Exercise 04">
       <option name="closed" value="true" />
@@ -289,7 +291,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733226212535</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Configure task05">
+      <option name="closed" value="true" />
+      <created>1733226394642</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1733226394642</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,6 +327,7 @@
     <MESSAGE value="Solve Task 3" />
     <MESSAGE value="Solve Task 4" />
     <MESSAGE value="Solve Task 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve Task 5" />
+    <MESSAGE value="Configure task05" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configure task05" />
   </component>
 </project>
