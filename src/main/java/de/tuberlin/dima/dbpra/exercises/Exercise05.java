@@ -1,6 +1,7 @@
 package de.tuberlin.dima.dbpra.exercises;
 
 import de.tuberlin.dima.dbpra.interfaces.Exercise05Interface;
+import de.tuberlin.dima.dbpra.interfaces.transactions.Lineitem;
 import de.tuberlin.dima.dbpra.interfaces.transactions.Order;
 import de.tuberlin.dima.dbpra.interfaces.transactions.PartSuppEntry;
 import de.tuberlin.dima.dbpra.interfaces.transactions.Supplier;
@@ -10,6 +11,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -93,11 +95,92 @@ public class Exercise05 implements Exercise05Interface {
         }
     }
 
+
+    public PreparedStatement setOrderStatement(Connection connection, Order order) throws SQLException {
+        PreparedStatement pstmt = connection.prepareStatement(getQueryString(4));
+        pstmt.setInt(1, order.getOrderkey());
+        pstmt.setInt(2, order.getCustkey());
+        pstmt.setString(3, order.getOrderstatus());
+        pstmt.setDouble(4, -1);
+        pstmt.setDate(5, new Date(System.currentTimeMillis()));
+        pstmt.setString(6, order.getOrderpriority());
+        pstmt.setString(7, order.getClerk());
+        pstmt.setInt(8, order.getShippriority());
+
+    }
+
     /**
      * Task 2 (see slides)
      */
     public void editOrder(Connection connection, Order order) {
-        // your code goes here
+        try {
+            // 1. Transaction Setup
+            // Set autocommit and isolation level
+            // Think: What's the minimum isolation level needed?
+            connection.setAutoCommit(false);
+            connection.setTransactionIsolation(Connection.TRANSACTION_READ_COMMITTED);
+
+
+            // 2. Initial Validation
+            // Check if any lineitem is null
+            // Calculate total quantity for all items
+            // Determine if discount applies
+            int totalQty = 0;
+
+            while(order.getLineitems().hasNext()) {
+                Lineitem lineitem = order.getLineitems().next();
+                if (lineitem == null) {
+                    throw new RuntimeException("Lineitem is null");
+                }
+                totalQty += lineitem.getQuantity();
+            }
+
+            boolean discountApplies = totalQty > 100;
+
+
+            // 3. Insert Order
+            // Create and execute order insertion
+            // Need: orderkey for later lineitem insertions
+            PreparedStatement orderStmt = setOrderStatement(connection, order);
+            orderStmt.executeUpdate();
+
+
+
+            // 4. Process Each Lineitem
+            Iterator<Lineitem> lineitems = order.getLineitems();
+            while (lineitems.hasNext()) {
+                Lineitem lineitem = lineitems.next();
+
+                // 4.1 Find Suitable Supplier
+                // Query supplier with:
+                // - Enough quantity (availqty >= needed quantity)
+                // - Lowest supplycost
+                // If no supplier found -> rollback
+
+                // 4.2 Price Calculations
+                // - Base price (supplycost * quantity)
+                // - Add profit margin
+                // - Calculate discount if applicable
+
+                // 4.3 Insert Lineitem
+                // Insert with calculated values
+
+                // 4.4 Update Supplier
+                // Reduce supplier's availqty
+            }
+
+            // 5. Update Order Total
+            // Calculate and update final order total
+            // Remember to consider discounts
+
+            // 6. Commit Transaction
+            connection.commit();
+
+        } catch (SQLException e) {
+            // 7. Error Handling
+            // Rollback transaction
+            throw new RuntimeException(e);
+        }
     }
 
     private String getQueryString(int i) {

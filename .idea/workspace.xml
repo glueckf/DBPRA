@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b58c69eb-c10c-4258-9069-4a5c03886920" name="Changes" comment="Configure task05">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Query01.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Query02.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Query03.sql" afterDir="false" />
+    <list default="true" id="b58c69eb-c10c-4258-9069-4a5c03886920" name="Changes" comment="Solve Task 1 (ja Robert ich habe absolut nichts commited) :))">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/tuberlin/dima/dbpra/exercises/Exercise05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/tuberlin/dima/dbpra/exercises/Exercise05.java" afterDir="false" />
     </list>
@@ -49,37 +44,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.ConnectionConfigTest (1).executor": "Run",
-    "JUnit.ConnectionConfigTest.executor": "Run",
-    "JUnit.Exercise04Test.executor": "Run",
-    "JUnit.Exercise04Test.testEx03CreateView2.executor": "Run",
-    "JUnit.Exercise04Test.testEx04CreateTrigger.executor": "Run",
-    "JUnit.Exercise04Test.testEx05CreateProcedure.executor": "Run",
-    "JUnit.Exercise051Test.executor": "Run",
-    "JUnit.Exercise051Test.test1CheckTransactionLevel.executor": "Run",
-    "Maven.exercise04 [clean].executor": "Run",
-    "Maven.exercise04 [package].executor": "Run",
-    "Maven.exercise05 [clean].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "task05",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.ConnectionConfigTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ConnectionConfigTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Exercise04Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Exercise04Test.testEx03CreateView2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Exercise04Test.testEx04CreateTrigger.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Exercise04Test.testEx05CreateProcedure.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Exercise051Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Exercise051Test.test1CheckTransactionLevel.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.exercise04 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.exercise04 [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.exercise05 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;task05&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "db2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;db2&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.Exercise051Test">
     <configuration name="ConnectionConfigTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exercise05" />
@@ -188,7 +183,8 @@
       <workItem from="1732188885717" duration="863000" />
       <workItem from="1732638503424" duration="2894000" />
       <workItem from="1732641405002" duration="14261000" />
-      <workItem from="1733226239334" duration="8763000" />
+      <workItem from="1733226239334" duration="9541000" />
+      <workItem from="1733240730900" duration="711000" />
     </task>
     <task id="LOCAL-00001" summary="Config Exercise 04">
       <option name="closed" value="true" />
@@ -318,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733226648075</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Solve Task 1 (ja Robert ich habe absolut nichts commited) :))">
+      <option name="closed" value="true" />
+      <created>1733239968900</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1733239968900</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,6 +351,7 @@
     <MESSAGE value="Solve Task 4" />
     <MESSAGE value="Solve Task 5" />
     <MESSAGE value="Configure task05" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configure task05" />
+    <MESSAGE value="Solve Task 1 (ja Robert ich habe absolut nichts commited) :))" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve Task 1 (ja Robert ich habe absolut nichts commited) :))" />
   </component>
 </project>
