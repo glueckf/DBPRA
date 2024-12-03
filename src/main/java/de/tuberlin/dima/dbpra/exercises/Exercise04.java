@@ -17,8 +17,8 @@ public class Exercise04 implements Exercise04Interface {
      */
     public void ex01CreateUDFs(Connection con) throws SQLException {
         // your code comes here
-        executeStatement(con, getQueryString(1));
-        executeStatement(con, getQueryString(2));
+        executeStatementWithE(con, getQueryString(1));
+        executeStatementWithE(con, getQueryString(2));
     }
 
     /**
@@ -26,7 +26,7 @@ public class Exercise04 implements Exercise04Interface {
      */
     public void ex02CreateView1(Connection con) throws SQLException {
         // your code comes here
-        executeStatement(con, getQueryString(3));
+        executeStatementWithE(con, getQueryString(3));
     }
 
     /**
@@ -34,7 +34,7 @@ public class Exercise04 implements Exercise04Interface {
      */
     public void ex03CreateView2(Connection con) throws SQLException {
         // your code comes here
-        executeStatement(con, getQueryString(4));
+        executeStatementWithE(con, getQueryString(4));
     }
 
     /**
@@ -42,7 +42,7 @@ public class Exercise04 implements Exercise04Interface {
      */
     public void ex04CreateTrigger(Connection con) throws SQLException {
         // your code comes here
-        executeStatement(con, getQueryString(5));
+        executeStatementWithE(con, getQueryString(5));
     }
 
     /**
@@ -50,12 +50,17 @@ public class Exercise04 implements Exercise04Interface {
      */
     public void ex05CreateProcedure(Connection con) throws SQLException {
         // your code comes here
-        executeStatement(con, getQueryString(6));
+        executeStatementWithE(con, getQueryString(6));
     }
 
-    private void executeStatement(Connection con, String query) throws SQLException {
+    private void executeStatementWithE(Connection con, String query) throws SQLException {
         Statement statement = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-        statement.execute(query);
+        try{
+            statement.execute(query);
+        }catch(SQLException e){
+            e.printStackTrace();
+            throw e;
+        }
     }
 
     private String getQueryString(int i) {
