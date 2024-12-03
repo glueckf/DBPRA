@@ -137,7 +137,14 @@ public class Exercise05 implements Exercise05Interface {
 
     }
 
-    public PreparedStatement findSuitableSupplier(Connection connection, Lineitem lineitem) throws SQLException {
+    public PreparedStatement updateOrderStatement(Connection connection, Order order, double price) throws SQLException {
+        PreparedStatement stmt = connection.prepareStatement(getQueryString(8));
+        stmt.setInt(1, order.getOrderkey());
+        stmt.setDouble(2, price);
+        return stmt;
+    }
+
+    public PreparedStatement findSuitableSupplierStatement(Connection connection, Lineitem lineitem) throws SQLException {
         PreparedStatement pstmt = connection.prepareStatement(getQueryString(5));
         pstmt.setInt(1, lineitem.getPartkey());
         pstmt.setInt(2, lineitem.getQuantity());
@@ -204,7 +211,7 @@ public class Exercise05 implements Exercise05Interface {
                 // - Enough quantity (availqty >= needed quantity)
                 // - Lowest supplycost
                 // If no supplier found -> rollback
-                PreparedStatement supplierStmt = findSuitableSupplier(connection, lineitem);
+                PreparedStatement supplierStmt = findSuitableSupplierStatement(connection, lineitem);
                 ResultSet rs = supplierStmt.executeQuery();
                 double suppCost = 0;
                 int suppkey = 0;
@@ -227,7 +234,7 @@ public class Exercise05 implements Exercise05Interface {
                 PreparedStatement liStmt = setLineItemStatement(connection, order, lineitem, suppkey, price);
                 liStmt.executeUpdate();
 
-                // Update total Price
+                // Update total Price after discounts
                 totalPrice += (price[0] - price[1]);
 
                 // 4.4 Update Supplier
