@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b58c69eb-c10c-4258-9069-4a5c03886920" name="Changes" comment="Solve Task 1 (ja Robert ich habe absolut nichts commited) :))">
+    <list default="true" id="b58c69eb-c10c-4258-9069-4a5c03886920" name="Changes" comment="Write SQL Query for order insertion">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Query05.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/tuberlin/dima/dbpra/exercises/Exercise05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/tuberlin/dima/dbpra/exercises/Exercise05.java" afterDir="false" />
     </list>
@@ -184,7 +185,8 @@
       <workItem from="1732638503424" duration="2894000" />
       <workItem from="1732641405002" duration="14261000" />
       <workItem from="1733226239334" duration="9541000" />
-      <workItem from="1733240730900" duration="711000" />
+      <workItem from="1733240730900" duration="1166000" />
+      <workItem from="1733241904728" duration="740000" />
     </task>
     <task id="LOCAL-00001" summary="Config Exercise 04">
       <option name="closed" value="true" />
@@ -322,7 +324,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733239968900</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Write initial logic for discount">
+      <option name="closed" value="true" />
+      <created>1733241523026</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1733241523026</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Write SQL Query for order insertion">
+      <option name="closed" value="true" />
+      <created>1733241595539</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1733241595539</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,6 +370,8 @@
     <MESSAGE value="Solve Task 5" />
     <MESSAGE value="Configure task05" />
     <MESSAGE value="Solve Task 1 (ja Robert ich habe absolut nichts commited) :))" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve Task 1 (ja Robert ich habe absolut nichts commited) :))" />
+    <MESSAGE value="Write initial logic for discount" />
+    <MESSAGE value="Write SQL Query for order insertion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Write SQL Query for order insertion" />
   </component>
 </project>

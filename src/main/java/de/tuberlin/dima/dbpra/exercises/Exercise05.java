@@ -106,7 +106,28 @@ public class Exercise05 implements Exercise05Interface {
         pstmt.setString(6, order.getOrderpriority());
         pstmt.setString(7, order.getClerk());
         pstmt.setInt(8, order.getShippriority());
+        return pstmt;
+    }
 
+    public PreparedStatement setLineItemStatement (Connection connection, Order order,  Lineitem lineitem, double price) throws SQLException {
+        PreparedStatement pstmt = connection.prepareStatement(getQueryString(6));
+    }
+
+    public PreparedStatement findSuitableSupplier(Connection connection, Lineitem lineitem) throws SQLException {
+        PreparedStatement pstmt = connection.prepareStatement(getQueryString(5));
+        pstmt.setInt(1, lineitem.getPartkey());
+        pstmt.setInt(2, lineitem.getQuantity());
+        return pstmt;
+    }
+
+    public double calculatePrice(Lineitem lineitem, double supplycost, boolean discount){
+        double basePrice = lineitem.getQuantity() * supplycost;
+        basePrice *= 1.03;
+        if (discount) {
+            double dis = basePrice * 0.06;
+            return basePrice - dis;
+        }
+        return basePrice;
     }
 
     /**
@@ -156,14 +177,26 @@ public class Exercise05 implements Exercise05Interface {
                 // - Enough quantity (availqty >= needed quantity)
                 // - Lowest supplycost
                 // If no supplier found -> rollback
+                PreparedStatement supplierStmt = findSuitableSupplier(connection, lineitem);
+                ResultSet rs = supplierStmt.executeQuery();
+                double suppCost = 0;
+                if(rs.next()) {
+                    int suppkey = rs.getInt("suppkey");
+                    if (suppkey == 0){
+                        throw new SQLException();
+                    }
+                    suppCost = rs.getDouble("supplycost");
+                }
 
                 // 4.2 Price Calculations
                 // - Base price (supplycost * quantity)
                 // - Add profit margin
                 // - Calculate discount if applicable
+                double price = calculatePrice(lineitem, suppCost, discountApplies);
 
                 // 4.3 Insert Lineitem
                 // Insert with calculated values
+                PreparedStatement liStmt = setLineItemStatement(connection, order, lineitem, price);
 
                 // 4.4 Update Supplier
                 // Reduce supplier's availqty
@@ -179,7 +212,13 @@ public class Exercise05 implements Exercise05Interface {
         } catch (SQLException e) {
             // 7. Error Handling
             // Rollback transaction
+            try {
+                connection.rollback();  // Add rollback in case of error
+            } catch (SQLException rollbackEx) {
+                throw new RuntimeException("Error during rollback: " + rollbackEx.getMessage(), rollbackEx);
+            }
             throw new RuntimeException(e);
+
         }
     }
 
