@@ -109,8 +109,32 @@ public class Exercise05 implements Exercise05Interface {
         return pstmt;
     }
 
-    public PreparedStatement setLineItemStatement (Connection connection, Order order,  Lineitem lineitem, double price) throws SQLException {
-        PreparedStatement pstmt = connection.prepareStatement(getQueryString(6));
+    public PreparedStatement setLineItemStatement (Connection connection, Order order,  Lineitem lineitem, int suppkey, double[] price) throws SQLException {
+        PreparedStatement stmt = connection.prepareStatement(getQueryString(6));
+        stmt.setInt(1, order.getOrderkey());
+        stmt.setInt(2, lineitem.getPartkey());
+        stmt.setInt(3, suppkey);
+        stmt.setDouble(4, lineitem.getLinenumber());
+        stmt.setDouble(5, price[1]);
+        stmt.setDouble(6, price[2]);
+        stmt.setDouble(7, 0);
+        stmt.setString(8, lineitem.getReturnflag());
+        stmt.setString(9, lineitem.getLinestatus());
+        stmt.setDate(10, Date.valueOf(lineitem.getShipdate()));
+        stmt.setDate(11, Date.valueOf(lineitem.getCommitdate()));
+        stmt.setDate(12, Date.valueOf(lineitem.getReceiptdate()));
+        stmt.setString(13, lineitem.getShipinstruct());
+        stmt.setString(14, lineitem.getShipmodet());
+        return stmt;
+    }
+
+    public PreparedStatement setSupplierStatement (Connection connection, Lineitem lineitem, int suppkey) throws SQLException {
+        PreparedStatement stmt = connection.prepareStatement(getQueryString(7));
+        stmt.setInt(1, lineitem.getQuantity());
+        stmt.setInt(2, lineitem.getPartkey());
+        stmt.setInt(3, suppkey);
+        return stmt;
+
     }
 
     public PreparedStatement findSuitableSupplier(Connection connection, Lineitem lineitem) throws SQLException {
@@ -120,14 +144,16 @@ public class Exercise05 implements Exercise05Interface {
         return pstmt;
     }
 
-    public double calculatePrice(Lineitem lineitem, double supplycost, boolean discount){
-        double basePrice = lineitem.getQuantity() * supplycost;
-        basePrice *= 1.03;
-        if (discount) {
-            double dis = basePrice * 0.06;
-            return basePrice - dis;
+    public double[] calculatePrice(Lineitem lineitem, double supplycost, boolean discount){
+        double[] prices = new double[2];
+        double price = lineitem.getQuantity() * supplycost;
+        prices[0] = price;
+        if(discount){
+            prices[1] = price * 0.06;
         }
-        return basePrice;
+        prices[1] = 0;
+        return prices;
+
     }
 
     /**
@@ -147,6 +173,7 @@ public class Exercise05 implements Exercise05Interface {
             // Calculate total quantity for all items
             // Determine if discount applies
             int totalQty = 0;
+            double totalPrice = 0;
 
             while(order.getLineitems().hasNext()) {
                 Lineitem lineitem = order.getLineitems().next();
@@ -180,8 +207,9 @@ public class Exercise05 implements Exercise05Interface {
                 PreparedStatement supplierStmt = findSuitableSupplier(connection, lineitem);
                 ResultSet rs = supplierStmt.executeQuery();
                 double suppCost = 0;
+                int suppkey = 0;
                 if(rs.next()) {
-                    int suppkey = rs.getInt("suppkey");
+                    suppkey = rs.getInt("suppkey");
                     if (suppkey == 0){
                         throw new SQLException();
                     }
@@ -192,14 +220,20 @@ public class Exercise05 implements Exercise05Interface {
                 // - Base price (supplycost * quantity)
                 // - Add profit margin
                 // - Calculate discount if applicable
-                double price = calculatePrice(lineitem, suppCost, discountApplies);
+                double[] price = calculatePrice(lineitem, suppCost, discountApplies);
 
                 // 4.3 Insert Lineitem
                 // Insert with calculated values
-                PreparedStatement liStmt = setLineItemStatement(connection, order, lineitem, price);
+                PreparedStatement liStmt = setLineItemStatement(connection, order, lineitem, suppkey, price);
+                liStmt.executeUpdate();
+
+                // Update total Price
+                totalPrice += (price[0] - price[1]);
 
                 // 4.4 Update Supplier
                 // Reduce supplier's availqty
+                PreparedStatement supStmt = setSupplierStatement(connection, lineitem, suppkey);
+                supStmt.executeUpdate();
             }
 
             // 5. Update Order Total
