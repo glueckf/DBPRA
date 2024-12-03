@@ -101,7 +101,7 @@ public class Exercise05 implements Exercise05Interface {
         pstmt.setInt(1, order.getOrderkey());
         pstmt.setInt(2, order.getCustkey());
         pstmt.setString(3, order.getOrderstatus());
-        pstmt.setDouble(4, -1);
+        pstmt.setDouble(4, 0);
         pstmt.setDate(5, new Date(System.currentTimeMillis()));
         pstmt.setString(6, order.getOrderpriority());
         pstmt.setString(7, order.getClerk());
@@ -115,16 +115,17 @@ public class Exercise05 implements Exercise05Interface {
         stmt.setInt(2, lineitem.getPartkey());
         stmt.setInt(3, suppkey);
         stmt.setDouble(4, lineitem.getLinenumber());
-        stmt.setDouble(5, price[1]);
-        stmt.setDouble(6, price[2]);
-        stmt.setDouble(7, 0);
-        stmt.setString(8, lineitem.getReturnflag());
-        stmt.setString(9, lineitem.getLinestatus());
-        stmt.setDate(10, Date.valueOf(lineitem.getShipdate()));
-        stmt.setDate(11, Date.valueOf(lineitem.getCommitdate()));
-        stmt.setDate(12, Date.valueOf(lineitem.getReceiptdate()));
-        stmt.setString(13, lineitem.getShipinstruct());
-        stmt.setString(14, lineitem.getShipmodet());
+        stmt.setDouble(5, lineitem.getQuantity());
+        stmt.setDouble(6, price[0]);
+        stmt.setDouble(7, price[1]);
+        stmt.setDouble(8, 0);
+        stmt.setString(9, lineitem.getReturnflag());
+        stmt.setString(10, lineitem.getLinestatus());
+        stmt.setDate(11, Date.valueOf(lineitem.getShipdate()));
+        stmt.setDate(12, Date.valueOf(lineitem.getCommitdate()));
+        stmt.setDate(13, Date.valueOf(lineitem.getReceiptdate()));
+        stmt.setString(14, lineitem.getShipinstruct());
+        stmt.setString(15, lineitem.getShipmodet());
         return stmt;
     }
 
@@ -151,117 +152,144 @@ public class Exercise05 implements Exercise05Interface {
         return pstmt;
     }
 
-    public double[] calculatePrice(Lineitem lineitem, double supplycost, boolean discount){
+    public double[] calculatePrice(Lineitem lineitem, double supplycost, boolean discount) {
         double[] prices = new double[2];
-        double price = lineitem.getQuantity() * supplycost;
+        double price = lineitem.getQuantity() * supplycost * 1.03;  // Add 3% profit margin
         prices[0] = price;
-        if(discount){
+        if(discount) {
             prices[1] = price * 0.06;
+        } else {
+            prices[1] = 0;
         }
-        prices[1] = 0;
         return prices;
+    }
 
+    // Helper method to safely close resources
+    private void closeQuietly(AutoCloseable resource) {
+        if (resource != null) {
+            try {
+                resource.close();
+            } catch (Exception e) {
+                // Log the error but don't throw it
+                System.err.println("Error closing resource: " + e.getMessage());
+            }
+        }
     }
 
     /**
      * Task 2 (see slides)
      */
     public void editOrder(Connection connection, Order order) {
+        // Declare resources outside try block so we can close them in finally
+        PreparedStatement orderStmt = null;
+        PreparedStatement supplierStmt = null;
+        PreparedStatement lineItemStmt = null;
+        PreparedStatement updateSupplierStmt = null;
+        PreparedStatement updateOrderStmt = null;
+        ResultSet rs = null;
+
         try {
-            // 1. Transaction Setup
-            // Set autocommit and isolation level
-            // Think: What's the minimum isolation level needed?
+            // Begin transaction with READ_COMMITTED isolation level
+            // This level prevents dirty reads while allowing better concurrency than SERIALIZABLE
             connection.setAutoCommit(false);
             connection.setTransactionIsolation(Connection.TRANSACTION_READ_COMMITTED);
 
+            // First pass: Validate all line items and calculate total quantity
+            // Store iterator just once to avoid concurrent modification issues
+            Iterator<Lineitem> lineItemIterator = order.getLineitems();
+            List<Lineitem> validItems = new ArrayList<>();
+            int totalQuantity = 0;
 
-            // 2. Initial Validation
-            // Check if any lineitem is null
-            // Calculate total quantity for all items
-            // Determine if discount applies
-            int totalQty = 0;
-            double totalPrice = 0;
-
-            while(order.getLineitems().hasNext()) {
-                Lineitem lineitem = order.getLineitems().next();
-                if (lineitem == null) {
-                    throw new RuntimeException("Lineitem is null");
+            // Process each line item once for validation
+            while (lineItemIterator.hasNext()) {
+                Lineitem item = lineItemIterator.next();
+                if (item == null) {
+                    connection.rollback();
+                    return;
                 }
-                totalQty += lineitem.getQuantity();
+                validItems.add(item);
+                totalQuantity += item.getQuantity();
             }
 
-            boolean discountApplies = totalQty > 100;
+            // Determine if discount applies (6% for orders of 100+ items)
+            boolean applyDiscount = totalQuantity >= 100;
 
-
-            // 3. Insert Order
-            // Create and execute order insertion
-            // Need: orderkey for later lineitem insertions
-            PreparedStatement orderStmt = setOrderStatement(connection, order);
+            // Insert the order first (we need the orderkey for line items)
+            orderStmt = setOrderStatement(connection, order);
             orderStmt.executeUpdate();
 
+            // Track total price for the entire order
+            double orderTotalPrice = 0.0;
 
+            // Process each validated line item
+            for (Lineitem item : validItems) {
+                // Find supplier with sufficient quantity and lowest cost
+                supplierStmt = findSuitableSupplierStatement(connection, item);
+                rs = supplierStmt.executeQuery();
 
-            // 4. Process Each Lineitem
-            Iterator<Lineitem> lineitems = order.getLineitems();
-            while (lineitems.hasNext()) {
-                Lineitem lineitem = lineitems.next();
-
-                // 4.1 Find Suitable Supplier
-                // Query supplier with:
-                // - Enough quantity (availqty >= needed quantity)
-                // - Lowest supplycost
-                // If no supplier found -> rollback
-                PreparedStatement supplierStmt = findSuitableSupplierStatement(connection, lineitem);
-                ResultSet rs = supplierStmt.executeQuery();
-                double suppCost = 0;
-                int suppkey = 0;
-                if(rs.next()) {
-                    suppkey = rs.getInt("suppkey");
-                    if (suppkey == 0){
-                        throw new SQLException();
+                // Get supplier information
+                int supplierKey;
+                double supplyCost;
+                if (rs.next()) {
+                    supplierKey = rs.getInt("suppkey");
+                    supplyCost = rs.getDouble("supplycost");
+                    if (supplierKey == 0) {
+                        connection.rollback();
+                        throw new SQLException("No valid supplier found for part " + item.getPartkey());
                     }
-                    suppCost = rs.getDouble("supplycost");
+                } else {
+                    connection.rollback();
+                    throw new SQLException("No supplier with sufficient quantity for part " + item.getPartkey());
                 }
 
-                // 4.2 Price Calculations
-                // - Base price (supplycost * quantity)
-                // - Add profit margin
-                // - Calculate discount if applicable
-                double[] price = calculatePrice(lineitem, suppCost, discountApplies);
+                // Calculate prices including profit margin and possible discount
+                double[] prices = calculatePrice(item, supplyCost, applyDiscount);
 
-                // 4.3 Insert Lineitem
-                // Insert with calculated values
-                PreparedStatement liStmt = setLineItemStatement(connection, order, lineitem, suppkey, price);
-                liStmt.executeUpdate();
+                // Insert the line item
+                lineItemStmt = setLineItemStatement(connection, order, item, supplierKey, prices);
+                lineItemStmt.executeUpdate();
 
-                // Update total Price after discounts
-                totalPrice += (price[0] - price[1]);
+                // Update the running total (price minus discount)
+                orderTotalPrice += (prices[0] - prices[1]);
 
-                // 4.4 Update Supplier
-                // Reduce supplier's availqty
-                PreparedStatement supStmt = setSupplierStatement(connection, lineitem, suppkey);
-                supStmt.executeUpdate();
+                // Update supplier's available quantity
+                updateSupplierStmt = setSupplierStatement(connection, item, supplierKey);
+                updateSupplierStmt.executeUpdate();
+
+                // Close resources for this iteration
+                closeQuietly(rs);
+                closeQuietly(supplierStmt);
+                closeQuietly(lineItemStmt);
+                closeQuietly(updateSupplierStmt);
             }
 
-            // 5. Update Order Total
-            // Calculate and update final order total
-            // Remember to consider discounts
-            PreparedStatement oStmt = updateOrderStatement(connection, order, totalPrice);
-            oStmt.executeUpdate();
+            // Update the order with final total price
+            updateOrderStmt = updateOrderStatement(connection, order, orderTotalPrice);
+            updateOrderStmt.executeUpdate();
 
-            // 6. Commit Transaction
+            // Commit the transaction
             connection.commit();
 
         } catch (SQLException e) {
-            // 7. Error Handling
-            // Rollback transaction
+            // Attempt rollback on any SQL exception
             try {
-                connection.rollback();  // Add rollback in case of error
+                if (connection != null) {
+                    connection.rollback();
+                }
             } catch (SQLException rollbackEx) {
-                throw new RuntimeException("Error during rollback: " + rollbackEx.getMessage(), rollbackEx);
+                // Combine both exceptions in the error message
+                throw new RuntimeException("Transaction failed and rollback failed: " +
+                        e.getMessage() + " & " + rollbackEx.getMessage());
             }
-            throw new RuntimeException(e);
-
+            throw new RuntimeException("Transaction failed: " + e.getMessage());
+        } finally {
+            // Close all resources in finally block
+            closeQuietly(rs);
+            closeQuietly(orderStmt);
+            closeQuietly(supplierStmt);
+            closeQuietly(lineItemStmt);
+            closeQuietly(updateSupplierStmt);
+            closeQuietly(updateOrderStmt);
         }
     }
 
