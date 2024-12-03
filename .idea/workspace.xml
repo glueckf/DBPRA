@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b58c69eb-c10c-4258-9069-4a5c03886920" name="Changes" comment="Solve Task 5" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="task04" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;glueckf&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/glueckf/DBPRA.git&quot;,
+    &quot;accountId&quot;: &quot;1c67b2b7-4a17-444c-a342-a52ca0113a87&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2p9oP7kDZPgCevyvQIYj0FAbZG8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.ConnectionConfigTest.executor": "Run",
+    "JUnit.Exercise04Test.executor": "Run",
+    "JUnit.Exercise04Test.testEx03CreateView2.executor": "Run",
+    "JUnit.Exercise04Test.testEx04CreateTrigger.executor": "Run",
+    "JUnit.Exercise04Test.testEx05CreateProcedure.executor": "Run",
+    "Maven.exercise04 [clean].executor": "Run",
+    "Maven.exercise04 [package].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "db2"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.Exercise04Test.testEx05CreateProcedure">
+    <configuration name="ConnectionConfigTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.tuberlin.dima.dbpra.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.config" />
+      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.config.ConnectionConfigTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercise04Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.tuberlin.dima.dbpra.exercises.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.exercises" />
+      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise04Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercise04Test.testEx03CreateView2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.tuberlin.dima.dbpra.exercises.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.exercises" />
+      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise04Test" />
+      <option name="METHOD_NAME" value="testEx03CreateView2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercise04Test.testEx04CreateTrigger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.tuberlin.dima.dbpra.exercises.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.exercises" />
+      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise04Test" />
+      <option name="METHOD_NAME" value="testEx04CreateTrigger" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercise04Test.testEx05CreateProcedure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.tuberlin.dima.dbpra.exercises.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.exercises" />
+      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise04Test" />
+      <option name="METHOD_NAME" value="testEx05CreateProcedure" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Exercise04Test.testEx05CreateProcedure" />
+        <item itemvalue="JUnit.Exercise04Test" />
+        <item itemvalue="JUnit.Exercise04Test.testEx04CreateTrigger" />
+        <item itemvalue="JUnit.Exercise04Test.testEx03CreateView2" />
+        <item itemvalue="JUnit.ConnectionConfigTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19416.15" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19416.15" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b58c69eb-c10c-4258-9069-4a5c03886920" name="Changes" comment="" />
+      <created>1732187624097</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732187624097</updated>
+      <workItem from="1732187625138" duration="1252000" />
+      <workItem from="1732188885717" duration="863000" />
+      <workItem from="1732638503424" duration="2894000" />
+      <workItem from="1732641405002" duration="14261000" />
+    </task>
+    <task id="LOCAL-00001" summary="Config Exercise 04">
+      <option name="closed" value="true" />
+      <created>1732187759735</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732187759735</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Config Exercise 04">
+      <option name="closed" value="true" />
+      <created>1732188841533</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732188841533</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Config Exercise 04">
+      <option name="closed" value="true" />
+      <created>1732189112592</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732189112592</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Configure ConnectionConfig.java">
+      <option name="closed" value="true" />
+      <created>1732638954753</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732638954753</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add Execute Statement for first SQL statement">
+      <option name="closed" value="true" />
+      <created>1732638986404</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732638986404</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Solve Taks 1.a">
+      <option name="closed" value="true" />
+      <created>1732638999230</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732638999231</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Solve Task 1.b">
+      <option name="closed" value="true" />
+      <created>1732639545705</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1732639545705</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Solve Task 1.b">
+      <option name="closed" value="true" />
+      <created>1732640833450</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1732640833450</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Solve Task 1.a">
+      <option name="closed" value="true" />
+      <created>1732640843256</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1732640843256</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Solve Task 1">
+      <option name="closed" value="true" />
+      <created>1732640860887</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1732640860887</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Solve Task 3">
+      <option name="closed" value="true" />
+      <created>1732709452476</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732709452476</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Solve Task 4">
+      <option name="closed" value="true" />
+      <created>1732711119837</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1732711119837</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Solve Task 5">
+      <option name="closed" value="true" />
+      <created>1732717471502</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1732717471502</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Solve Task 5">
+      <option name="closed" value="true" />
+      <created>1733226212535</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1733226212535</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Config Exercise 04" />
+    <MESSAGE value="Configure ConnectionConfig.java" />
+    <MESSAGE value="Add Execute Statement for first SQL statement" />
+    <MESSAGE value="Solve Taks 1.a" />
+    <MESSAGE value="Solve Task 1.b" />
+    <MESSAGE value="Solve Task 1.a" />
+    <MESSAGE value="Solve Task 1" />
+    <MESSAGE value="Solve Task 3" />
+    <MESSAGE value="Solve Task 4" />
+    <MESSAGE value="Solve Task 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve Task 5" />
+  </component>
+</project>
