@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b58c69eb-c10c-4258-9069-4a5c03886920" name="Changes" comment="Write SQL Query for supplier">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Query06.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b58c69eb-c10c-4258-9069-4a5c03886920" name="Changes" comment="Write SQL Query for Lineitem">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Query07.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Query08.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/tuberlin/dima/dbpra/exercises/Exercise05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/tuberlin/dima/dbpra/exercises/Exercise05.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +186,7 @@
       <workItem from="1732641405002" duration="14261000" />
       <workItem from="1733226239334" duration="9541000" />
       <workItem from="1733240730900" duration="1166000" />
-      <workItem from="1733241904728" duration="1851000" />
+      <workItem from="1733241904728" duration="2202000" />
     </task>
     <task id="LOCAL-00001" summary="Config Exercise 04">
       <option name="closed" value="true" />
@@ -348,7 +348,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733242666041</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Write SQL Query for Lineitem">
+      <option name="closed" value="true" />
+      <created>1733243865532</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1733243865532</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,6 +389,7 @@
     <MESSAGE value="Write initial logic for discount" />
     <MESSAGE value="Write SQL Query for order insertion" />
     <MESSAGE value="Write SQL Query for supplier" />
-    <option name="LAST_COMMIT_MESSAGE" value="Write SQL Query for supplier" />
+    <MESSAGE value="Write SQL Query for Lineitem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Write SQL Query for Lineitem" />
   </component>
 </project>

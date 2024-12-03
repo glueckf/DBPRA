@@ -139,8 +139,8 @@ public class Exercise05 implements Exercise05Interface {
 
     public PreparedStatement updateOrderStatement(Connection connection, Order order, double price) throws SQLException {
         PreparedStatement stmt = connection.prepareStatement(getQueryString(8));
-        stmt.setInt(1, order.getOrderkey());
-        stmt.setDouble(2, price);
+        stmt.setDouble(1, price);
+        stmt.setInt(2, order.getOrderkey());
         return stmt;
     }
 
@@ -246,6 +246,8 @@ public class Exercise05 implements Exercise05Interface {
             // 5. Update Order Total
             // Calculate and update final order total
             // Remember to consider discounts
+            PreparedStatement oStmt = updateOrderStatement(connection, order, totalPrice);
+            oStmt.executeUpdate();
 
             // 6. Commit Transaction
             connection.commit();
