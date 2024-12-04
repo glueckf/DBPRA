@@ -235,11 +235,13 @@ public class Exercise05 implements Exercise05Interface {
                     supplyCost = rs.getDouble("supplycost");
                     if (supplierKey == 0) {
                         connection.rollback();
-                        throw new SQLException("No valid supplier found for part " + item.getPartkey());
+                        System.out.println("No valid supplier found for part " + item.getPartkey());
+                        return;
                     }
                 } else {
                     connection.rollback();
-                    throw new SQLException("No supplier with sufficient quantity for part " + item.getPartkey());
+                    System.out.println("No supplier with sufficient quantity for part " + item.getPartkey());
+                    return;
                 }
 
                 // Calculate prices including profit margin and possible discount
