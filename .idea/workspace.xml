@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b58c69eb-c10c-4258-9069-4a5c03886920" name="Changes" comment="Refactor solution" />
+    <list default="true" id="b58c69eb-c10c-4258-9069-4a5c03886920" name="Changes" comment="Refactor solution">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/tuberlin/dima/dbpra/exercises/Exercise05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/tuberlin/dima/dbpra/exercises/Exercise05.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,38 +49,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.ConnectionConfigTest (1).executor": "Run",
-    "JUnit.ConnectionConfigTest.executor": "Run",
-    "JUnit.Exercise04Test.executor": "Run",
-    "JUnit.Exercise04Test.testEx03CreateView2.executor": "Run",
-    "JUnit.Exercise04Test.testEx04CreateTrigger.executor": "Run",
-    "JUnit.Exercise04Test.testEx05CreateProcedure.executor": "Run",
-    "JUnit.Exercise051Test.executor": "Run",
-    "JUnit.Exercise051Test.test1CheckTransactionLevel.executor": "Run",
-    "JUnit.Exercise052Test.executor": "Run",
-    "Maven.exercise04 [clean].executor": "Run",
-    "Maven.exercise04 [package].executor": "Run",
-    "Maven.exercise05 [clean].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "task05",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.ConnectionConfigTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ConnectionConfigTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Exercise04Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Exercise04Test.testEx03CreateView2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Exercise04Test.testEx04CreateTrigger.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Exercise04Test.testEx05CreateProcedure.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Exercise051Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Exercise051Test.test1CheckTransactionLevel.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Exercise052Test.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.exercise04 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.exercise04 [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.exercise05 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.exercise05 [package].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;task05&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "db2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;db2&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.Exercise052Test">
     <configuration name="ConnectionConfigTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exercise05" />
@@ -188,7 +192,8 @@
       <workItem from="1732641405002" duration="14261000" />
       <workItem from="1733226239334" duration="9541000" />
       <workItem from="1733240730900" duration="1166000" />
-      <workItem from="1733241904728" duration="4329000" />
+      <workItem from="1733241904728" duration="4733000" />
+      <workItem from="1733311530135" duration="672000" />
     </task>
     <task id="LOCAL-00001" summary="Config Exercise 04">
       <option name="closed" value="true" />
@@ -390,7 +395,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733245639989</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Refactor solution">
+      <option name="closed" value="true" />
+      <created>1733311356409</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1733311356409</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
