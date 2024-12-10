@@ -1,15 +1,9 @@
 package de.tuberlin.dima.dbpra.exercises;
 
-import com.google.common.collect.Iterables;
-import org.apache.commons.lang3.NotImplementedException;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import scala.Tuple2;
 import scala.Tuple3;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 /*
  * WICHTIG - Falls der Code nicht läuft:
@@ -159,4 +153,3 @@ public class Exercise06 {
                 .sortBy(tuple -> tuple._1(), false, 1);
     }
 }
-
