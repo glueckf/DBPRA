@@ -11,6 +11,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/*
+ * WICHTIG - Falls der Code nicht läuft:
+ * Dieser Code wurde mit Java 17 getestet. Ich habe folgende Statements als
+ * --add-opens=java.base/java.nio=ALL-UNNAMED
+ * --add-opens=java.base/sun.nio.ch=ALL-UNNAMED
+ * --add-opens=java.base/java.lang=ALL-UNNAMED
+ * --add-opens=java.base/java.util=ALL-UNNAMED
+ * --add-opens=java.base/sun.security.action=ALL-UNNAMED
+ *
+ */
+
 public class Exercise06 {
 
     /*************************************
