@@ -27,7 +27,7 @@ The project consists of multiple tasks (task01-task06), each implemented in its 
 * task03: Integrity Constraints - Implementation of database constraints and rules
 * task04: Views and User-Defined Functions - Creating and managing database views
 * task05: Transactions and Functions - Handling database transactions
-* task06: Performance Tuning - Database optimization and query performance
+* task06: MapReduce/Spark - Big data processing fundamentals
 
 ## Status 
 Currently in active development with regular task submissions. 
