@@ -14,9 +14,10 @@ Key focus areas:
 
 ## Technologies
 - Database: IBM Db2
-- Programming Language: Java
-- Database Connectivity: JDBC
+- Programming Language: Java, SQL 
 - Development Environment: IntelliJ IDEA
+- Build Tool: Maven
+- Big Data Framework: Apache Spark
 - Version Control: Git with branch-based task management
 
 ## Project Structure
