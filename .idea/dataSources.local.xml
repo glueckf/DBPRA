@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-241.19416.15">
+    <data-source name="DBPRA Connection" uuid="3173db14-620e-4015-9fa9-d0efabdd1390">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="DB2_LUW" />
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

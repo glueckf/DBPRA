@@ -1,0 +1,77 @@
+Index: src/main/resources/SQL2Query05.sql
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>-- Query result:\n-- Find orders that were placed between January 1st, 1995 and December 31st, 1997 (closed interval) and for which at least 2 line items\n-- were delivered later than promised.\n-- For each order priority output how many orders were affected.\n-- Arrange the result in descending order by amount.\n--\n-- Result schema:\n-- [ORDERPRIORITY| AMOUNT (↓)]\n--\n-- Points:\n-- 0.5\n--\n\nWITH late_deliveries AS (\n    SELECT L.ORDERKEY,\n           COUNT(*) AS AMOUNT\n    FROM LINEITEM L\n    WHERE L.RECEIPTDATE > L.COMMITDATE\n    GROUP BY L.ORDERKEY\n    HAVING COUNT(*) >= 2\n)\n\nSELECT\n    O.ORDERPRIORITY AS PRIORITY,\n    COUNT(*) AS AMOUNT\nFROM ORDERS O\nJOIN late_deliveries LD ON  O.ORDERKEY = LD.ORDERKEY\nWHERE O.ORDERDATE BETWEEN '1995-01-01' AND '1997-12-31'\nGROUP BY O.ORDERPRIORITY\nORDER BY AMOUNT DESC;
+===================================================================
+diff --git a/src/main/resources/SQL2Query05.sql b/src/main/resources/SQL2Query05.sql
+--- a/src/main/resources/SQL2Query05.sql	
++++ b/src/main/resources/SQL2Query05.sql	
+@@ -27,4 +27,4 @@
+ JOIN late_deliveries LD ON  O.ORDERKEY = LD.ORDERKEY
+ WHERE O.ORDERDATE BETWEEN '1995-01-01' AND '1997-12-31'
+ GROUP BY O.ORDERPRIORITY
+-ORDER BY AMOUNT DESC;
+\ No newline at end of file
++ORDER BY AMOUNT DESC;
+Index: src/main/resources/SQL2Query08.sql
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>-- Query result:\n-- For each shipping mode, find the name of the supplier  whose line items\n-- were most often shipped using this shipping mode.\n-- Arrange the result in descending order by number and ascending order by name.\n--\n-- Result schema:\n-- [SHIPMODE | NAME(↑2) | AMOUNT(↓1)]\n--\n-- Points:\n-- 0.5\n--\n\nWITH counts AS (\n    SELECT LI.SHIPMODE AS SHIPMODE, S.NAME AS NAME, COUNT(*) AS AMOUNT\n    FROM LINEITEM LI\n             JOIN PARTSUPP PS ON PS.PARTKEY = LI.PARTKEY AND PS.SUPPKEY = LI.SUPPKEY\n             JOIN SUPPLIER S ON S.SUPPKEY = PS.SUPPKEY\n    GROUP BY LI.SHIPMODE, S.NAME\n)\nSELECT SHIPMODE, NAME, AMOUNT\nFROM counts c1\nWHERE (SHIPMODE, AMOUNT) IN (\n    SELECT SHIPMODE, MAX(AMOUNT)\n    FROM counts\n    GROUP BY SHIPMODE\n)\nORDER BY AMOUNT DESC, NAME ASC;
+===================================================================
+diff --git a/src/main/resources/SQL2Query08.sql b/src/main/resources/SQL2Query08.sql
+--- a/src/main/resources/SQL2Query08.sql	
++++ b/src/main/resources/SQL2Query08.sql	
+@@ -17,6 +17,7 @@
+              JOIN SUPPLIER S ON S.SUPPKEY = PS.SUPPKEY
+     GROUP BY LI.SHIPMODE, S.NAME
+ )
++
+ SELECT SHIPMODE, NAME, AMOUNT
+ FROM counts c1
+ WHERE (SHIPMODE, AMOUNT) IN (
+Index: src/main/resources/SQL2Query02.sql
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>-- Query result:\n-- Output all suppliers who carry at least one item (part) from the manufacturer “Manufacturer#2”\n-- or the brand “Brand#52”.\n-- Arrange the result in descending order by name.\n--\n-- Result schema:\n-- [NAME (↓) | ADDRESS | PHONE]\n--\n-- Points:\n-- 0.25\n--\nSELECT DISTINCT S.NAME as NAME, S.ADDRESS as ADDRESS, S.PHONE as PHONE\nFROM SUPPLIER S\nJOIN PARTSUPP PS ON PS.SUPPKEY = S.SUPPKEY\nJOIN PART P ON P.PARTKEY = PS.PARTKEY\nWHERE P.MFGR = 'Manufacturer#2' OR P.BRAND = 'Brand#52'\nORDER BY NAME DESC;
+===================================================================
+diff --git a/src/main/resources/SQL2Query02.sql b/src/main/resources/SQL2Query02.sql
+--- a/src/main/resources/SQL2Query02.sql	
++++ b/src/main/resources/SQL2Query02.sql	
+@@ -9,7 +9,7 @@
+ -- Points:
+ -- 0.25
+ --
+-SELECT DISTINCT S.NAME as NAME, S.ADDRESS as ADDRESS, S.PHONE as PHONE
++SELECT DISTINCT S.NAME as NAME, S.ADDRESS as ADDRESS, S.PHONE as PHONE -- DISTINCT because one supplier can have multiple parts
+ FROM SUPPLIER S
+ JOIN PARTSUPP PS ON PS.SUPPKEY = S.SUPPKEY
+ JOIN PART P ON P.PARTKEY = PS.PARTKEY
+Index: src/main/resources/SQL2Query07.sql
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>-- Query result:\n-- Determine the brand(s) offered by most suppliers.\n-- Arrange the result in ascending order by brand.\n--\n-- Result scheme:\n-- [Marke (↑)]\n--\n-- Points:\n-- 0.5\n--\nWITH supplier_counts AS (\n    SELECT\n        P.BRAND,\n        COUNT(DISTINCT S.SUPPKEY) as supplier_count\n    FROM PART P\n             JOIN PARTSUPP PS ON PS.PARTKEY = P.PARTKEY\n             JOIN SUPPLIER S ON S.SUPPKEY = PS.SUPPKEY\n    GROUP BY P.BRAND\n)\nSELECT BRAND\nFROM supplier_counts\nWHERE supplier_count = (\n    SELECT MAX(supplier_count)\n    FROM supplier_counts\n)\nORDER BY BRAND ASC;\n\n\n
+===================================================================
+diff --git a/src/main/resources/SQL2Query07.sql b/src/main/resources/SQL2Query07.sql
+--- a/src/main/resources/SQL2Query07.sql	
++++ b/src/main/resources/SQL2Query07.sql	
+@@ -26,3 +26,4 @@
+ ORDER BY BRAND ASC;
+ 
+ 
++
+Index: .idea/dataSources.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"DataSourceManagerImpl\" format=\"xml\" multifile-model=\"true\">\n    <data-source source=\"LOCAL\" name=\"DBPRA@gnu.dima.tu-berlin.de\" uuid=\"5e2aa7db-ea7d-4a75-bd74-7b33b446c1ca\">\n      <driver-ref>db2.11</driver-ref>\n      <jdbc-driver>com.ibm.db2.jcc.DB2Driver</jdbc-driver>\n      <jdbc-url>jdbc:db2://gnu.dima.tu-berlin.de:50000/DBPRA</jdbc-url>\n      <jdbc-additional-properties>\n        <property name=\"com.intellij.clouds.kubernetes.db.host.port\" />\n        <property name=\"com.intellij.clouds.kubernetes.db.enabled\" value=\"false\" />\n        <property name=\"com.intellij.clouds.kubernetes.db.container.port\" />\n      </jdbc-additional-properties>\n      <working-dir>$ProjectFileDir$</working-dir>\n    </data-source>\n  </component>\n</project>
+===================================================================
+diff --git a/.idea/dataSources.xml b/.idea/dataSources.xml
+--- a/.idea/dataSources.xml	
++++ b/.idea/dataSources.xml	
+@@ -8,6 +8,7 @@
+       <jdbc-additional-properties>
+         <property name="com.intellij.clouds.kubernetes.db.host.port" />
+         <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
++        <property name="com.intellij.clouds.kubernetes.db.resource.type" value="Deployment" />
+         <property name="com.intellij.clouds.kubernetes.db.container.port" />
+       </jdbc-additional-properties>
+       <working-dir>$ProjectFileDir$</working-dir>

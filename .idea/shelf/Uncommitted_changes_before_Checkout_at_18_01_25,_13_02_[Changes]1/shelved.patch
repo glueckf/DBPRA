@@ -1,0 +1,232 @@
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"CompilerConfiguration\">\n    <annotationProcessing>\n      <profile name=\"Maven default annotation processors profile\" enabled=\"true\">\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\n        <outputRelativeToContentRoot value=\"true\" />\n        <module name=\"exercise02\" />\n      </profile>\n    </annotationProcessing>\n    <bytecodeTargetLevel>\n      <module name=\"exercise01\" target=\"11\" />\n    </bytecodeTargetLevel>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	
++++ b/.idea/compiler.xml	
+@@ -7,6 +7,7 @@
+         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+         <outputRelativeToContentRoot value="true" />
+         <module name="exercise02" />
++        <module name="exercise06" />
+       </profile>
+     </annotationProcessing>
+     <bytecodeTargetLevel>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"73acb2a7-a768-4686-a696-1f8b84e898d0\" name=\"Changes\" comment=\"Solve SQL Query Tasks\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"task01\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;glueckf&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/glueckf/DBPRA.git&quot;,\n    &quot;accountId&quot;: &quot;1c67b2b7-4a17-444c-a342-a52ca0113a87&quot;\n  }\n}</component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 6\n}</component>\n  <component name=\"ProjectId\" id=\"2o6vp8tZEzlzFd3ZkZIuX9VGJFb\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;JUnit.ConnectionConfigTest (1).executor&quot;: &quot;Run&quot;,\n    &quot;JUnit.ConnectionConfigTest.connectionTest.executor&quot;: &quot;Run&quot;,\n    &quot;JUnit.ConnectionConfigTest.executor&quot;: &quot;Run&quot;,\n    &quot;JUnit.Exercise01Test.executor&quot;: &quot;Run&quot;,\n    &quot;JUnit.Exercise01Test.getSQLQuery01Test.executor&quot;: &quot;Run&quot;,\n    &quot;JUnit.Exercise01Test.getSQLQuery06Test.executor&quot;: &quot;Run&quot;,\n    &quot;JUnit.Exercise01Test.getSQLQuery10Test.executor&quot;: &quot;Run&quot;,\n    &quot;JUnit.Exercise01Test.getSQLQuery11Test.executor&quot;: &quot;Run&quot;,\n    &quot;JUnit.Exercise02Test.executor&quot;: &quot;Run&quot;,\n    &quot;JUnit.Exercise02Test.getSQLQuery01Test.executor&quot;: &quot;Run&quot;,\n    &quot;JUnit.Exercise02Test.getSQLQuery02Test.executor&quot;: &quot;Run&quot;,\n    &quot;JUnit.Exercise02Test.getSQLQuery03Test.executor&quot;: &quot;Run&quot;,\n    &quot;Maven.exercise01 [clean].executor&quot;: &quot;Run&quot;,\n    &quot;Maven.exercise01 [package].executor&quot;: &quot;Run&quot;,\n    &quot;Maven.exercise02 [clean].executor&quot;: &quot;Run&quot;,\n    &quot;Maven.exercise02 [package].executor&quot;: &quot;Run&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;task02&quot;,\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  },\n  &quot;keyToStringList&quot;: {\n    &quot;DatabaseDriversLRU&quot;: [\n      &quot;db2&quot;\n    ]\n  }\n}</component>\n  <component name=\"RunManager\" selected=\"JUnit.Exercise02Test\">\n    <configuration name=\"ConnectionConfigTest (1)\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"exercise02\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"de.tuberlin.dima.dbpra.config.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"de.tuberlin.dima.dbpra.config\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"de.tuberlin.dima.dbpra.config.ConnectionConfigTest\" />\n      <option name=\"TEST_OBJECT\" value=\"class\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Exercise02Test\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"exercise02\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"de.tuberlin.dima.dbpra.exercises.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"de.tuberlin.dima.dbpra.exercises\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"de.tuberlin.dima.dbpra.exercises.Exercise02Test\" />\n      <option name=\"TEST_OBJECT\" value=\"class\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Exercise02Test.getSQLQuery01Test\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"exercise02\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"de.tuberlin.dima.dbpra.exercises.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"de.tuberlin.dima.dbpra.exercises\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"de.tuberlin.dima.dbpra.exercises.Exercise02Test\" />\n      <option name=\"METHOD_NAME\" value=\"getSQLQuery01Test\" />\n      <option name=\"TEST_OBJECT\" value=\"method\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Exercise02Test.getSQLQuery02Test\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"exercise02\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"de.tuberlin.dima.dbpra.exercises.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"de.tuberlin.dima.dbpra.exercises\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"de.tuberlin.dima.dbpra.exercises.Exercise02Test\" />\n      <option name=\"METHOD_NAME\" value=\"getSQLQuery02Test\" />\n      <option name=\"TEST_OBJECT\" value=\"method\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Exercise02Test.getSQLQuery03Test\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"exercise02\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"de.tuberlin.dima.dbpra.exercises.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"de.tuberlin.dima.dbpra.exercises\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"de.tuberlin.dima.dbpra.exercises.Exercise02Test\" />\n      <option name=\"METHOD_NAME\" value=\"getSQLQuery03Test\" />\n      <option name=\"TEST_OBJECT\" value=\"method\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"JUnit.Exercise02Test\" />\n        <item itemvalue=\"JUnit.Exercise02Test.getSQLQuery03Test\" />\n        <item itemvalue=\"JUnit.Exercise02Test.getSQLQuery01Test\" />\n        <item itemvalue=\"JUnit.Exercise02Test.getSQLQuery02Test\" />\n        <item itemvalue=\"JUnit.ConnectionConfigTest (1)\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19416.15\" />\n        <option value=\"bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19416.15\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"73acb2a7-a768-4686-a696-1f8b84e898d0\" name=\"Changes\" comment=\"Load HA01\" />\n      <created>1730203019207</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1730203019207</updated>\n      <workItem from=\"1730203020229\" duration=\"10533000\" />\n      <workItem from=\"1730625952021\" duration=\"565000\" />\n      <workItem from=\"1730626525760\" duration=\"2808000\" />\n      <workItem from=\"1730893618917\" duration=\"720000\" />\n      <workItem from=\"1730943335491\" duration=\"11396000\" />\n      <workItem from=\"1731331307388\" duration=\"1880000\" />\n      <workItem from=\"1732031404624\" duration=\"603000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Load HA01\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1730273623091</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1730273623091</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Create JAR-File for submission and update ConnectionConfig\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1730275683170</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1730275683170</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Import task02 files and configure ConnectionConfig\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1730626577862</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1730626577862</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Solve SQL Query Tasks\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1731332057816</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1731332057816</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"5\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Load HA01\" />\n    <MESSAGE value=\"Create JAR-File for submission and update ConnectionConfig\" />\n    <MESSAGE value=\"Import task02 files and configure ConnectionConfig\" />\n    <MESSAGE value=\"Solve SQL Query Tasks\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Solve SQL Query Tasks\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,8 +4,14 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="73acb2a7-a768-4686-a696-1f8b84e898d0" name="Changes" comment="Solve SQL Query Tasks">
++    <list default="true" id="73acb2a7-a768-4686-a696-1f8b84e898d0" name="Changes" comment="Recheck HA01">
++      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query02.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query02.sql" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query05.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query05.sql" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query07.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query07.sql" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/SQL2Query08.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SQL2Query08.sql" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -36,50 +42,63 @@
+   &quot;associatedIndex&quot;: 6
+ }</component>
+   <component name="ProjectId" id="2o6vp8tZEzlzFd3ZkZIuX9VGJFb" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;JUnit.ConnectionConfigTest (1).executor&quot;: &quot;Run&quot;,
+-    &quot;JUnit.ConnectionConfigTest.connectionTest.executor&quot;: &quot;Run&quot;,
+-    &quot;JUnit.ConnectionConfigTest.executor&quot;: &quot;Run&quot;,
+-    &quot;JUnit.Exercise01Test.executor&quot;: &quot;Run&quot;,
+-    &quot;JUnit.Exercise01Test.getSQLQuery01Test.executor&quot;: &quot;Run&quot;,
+-    &quot;JUnit.Exercise01Test.getSQLQuery06Test.executor&quot;: &quot;Run&quot;,
+-    &quot;JUnit.Exercise01Test.getSQLQuery10Test.executor&quot;: &quot;Run&quot;,
+-    &quot;JUnit.Exercise01Test.getSQLQuery11Test.executor&quot;: &quot;Run&quot;,
+-    &quot;JUnit.Exercise02Test.executor&quot;: &quot;Run&quot;,
+-    &quot;JUnit.Exercise02Test.getSQLQuery01Test.executor&quot;: &quot;Run&quot;,
+-    &quot;JUnit.Exercise02Test.getSQLQuery02Test.executor&quot;: &quot;Run&quot;,
+-    &quot;JUnit.Exercise02Test.getSQLQuery03Test.executor&quot;: &quot;Run&quot;,
+-    &quot;Maven.exercise01 [clean].executor&quot;: &quot;Run&quot;,
+-    &quot;Maven.exercise01 [package].executor&quot;: &quot;Run&quot;,
+-    &quot;Maven.exercise02 [clean].executor&quot;: &quot;Run&quot;,
+-    &quot;Maven.exercise02 [package].executor&quot;: &quot;Run&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;task02&quot;,
+-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "JUnit.ConnectionConfigTest (1).executor": "Run",
++    "JUnit.ConnectionConfigTest.connectionTest.executor": "Run",
++    "JUnit.ConnectionConfigTest.executor": "Run",
++    "JUnit.Exercise01Test.executor": "Run",
++    "JUnit.Exercise01Test.getSQLQuery01Test.executor": "Run",
++    "JUnit.Exercise01Test.getSQLQuery06Test.executor": "Run",
++    "JUnit.Exercise01Test.getSQLQuery10Test.executor": "Run",
++    "JUnit.Exercise01Test.getSQLQuery11Test.executor": "Run",
++    "JUnit.Exercise02Test (1).executor": "Run",
++    "JUnit.Exercise02Test.executor": "Run",
++    "JUnit.Exercise02Test.getSQLQuery01Test.executor": "Run",
++    "JUnit.Exercise02Test.getSQLQuery02Test.executor": "Run",
++    "JUnit.Exercise02Test.getSQLQuery03Test.executor": "Run",
++    "Maven.exercise01 [clean].executor": "Run",
++    "Maven.exercise01 [package].executor": "Run",
++    "Maven.exercise02 [clean].executor": "Run",
++    "Maven.exercise02 [package].executor": "Run",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "git-widget-placeholder": "task02",
++    "kotlin-language-version-configured": "true",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "vue.rearranger.settings.migration": "true"
+   },
+-  &quot;keyToStringList&quot;: {
+-    &quot;DatabaseDriversLRU&quot;: [
+-      &quot;db2&quot;
++  "keyToStringList": {
++    "DatabaseDriversLRU": [
++      "db2"
+     ]
+   }
+-}</component>
+-  <component name="RunManager" selected="JUnit.Exercise02Test">
+-    <configuration name="ConnectionConfigTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="exercise02" />
++}]]></component>
++  <component name="RunManager" selected="JUnit.Exercise02Test (1)">
++    <configuration name="SQL2Query04.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
++      <script-file value="$PROJECT_DIR$/src/main/resources/SQL2Query04.sql" />
++      <script-mode>FILE</script-mode>
++      <method v="2" />
++    </configuration>
++    <configuration name="SQL2Query05.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
++      <script-file value="$PROJECT_DIR$/src/main/resources/SQL2Query05.sql" />
++      <script-mode>FILE</script-mode>
++      <method v="2" />
++    </configuration>
++    <configuration name="ConnectionConfigTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="exercise06" />
+       <extension name="coverage">
+         <pattern>
+           <option name="PATTERN" value="de.tuberlin.dima.dbpra.config.*" />
+@@ -93,8 +112,8 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="Exercise02Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="exercise02" />
++    <configuration name="Exercise02Test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="exercise06" />
+       <extension name="coverage">
+         <pattern>
+           <option name="PATTERN" value="de.tuberlin.dima.dbpra.exercises.*" />
+@@ -108,7 +127,7 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="Exercise02Test.getSQLQuery01Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="Exercise02Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="exercise02" />
+       <extension name="coverage">
+         <pattern>
+@@ -118,51 +137,18 @@
+       </extension>
+       <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.exercises" />
+       <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise02Test" />
+-      <option name="METHOD_NAME" value="getSQLQuery01Test" />
+-      <option name="TEST_OBJECT" value="method" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="Exercise02Test.getSQLQuery02Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="exercise02" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="de.tuberlin.dima.dbpra.exercises.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.exercises" />
+-      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise02Test" />
+-      <option name="METHOD_NAME" value="getSQLQuery02Test" />
+-      <option name="TEST_OBJECT" value="method" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="Exercise02Test.getSQLQuery03Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="exercise02" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="de.tuberlin.dima.dbpra.exercises.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="de.tuberlin.dima.dbpra.exercises" />
+-      <option name="MAIN_CLASS_NAME" value="de.tuberlin.dima.dbpra.exercises.Exercise02Test" />
+-      <option name="METHOD_NAME" value="getSQLQuery03Test" />
+-      <option name="TEST_OBJECT" value="method" />
++      <option name="TEST_OBJECT" value="class" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="JUnit.Exercise02Test (1)" />
++        <item itemvalue="Database Script.SQL2Query05.sql" />
++        <item itemvalue="Database Script.SQL2Query04.sql" />
++        <item itemvalue="JUnit.ConnectionConfigTest" />
+         <item itemvalue="JUnit.Exercise02Test" />
+-        <item itemvalue="JUnit.Exercise02Test.getSQLQuery03Test" />
+-        <item itemvalue="JUnit.Exercise02Test.getSQLQuery01Test" />
+-        <item itemvalue="JUnit.Exercise02Test.getSQLQuery02Test" />
+-        <item itemvalue="JUnit.ConnectionConfigTest (1)" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -244,6 +230,7 @@
+     <MESSAGE value="Create JAR-File for submission and update ConnectionConfig" />
+     <MESSAGE value="Import task02 files and configure ConnectionConfig" />
+     <MESSAGE value="Solve SQL Query Tasks" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Solve SQL Query Tasks" />
++    <MESSAGE value="Recheck HA01" />
++    <option name="LAST_COMMIT_MESSAGE" value="Recheck HA01" />
+   </component>
+ </project>
+\ No newline at end of file
